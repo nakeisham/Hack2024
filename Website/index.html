@@ -1,31 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>QR Code Generator</title>
-</head>
-<body>
-    <h1>QR Code Generator</h1>
-    <input type="text" id="qrInput" placeholder="Enter text or URL">
-    <button onclick="generateQRCode()">Generate QR Code</button>
-    <br>
-    <img id="qrImage" src="" alt="QR Code" style="margin-top: 20px;">
-    
-    <script src="path/to/qrcode/index.js"></script>
-    <script>
-        function generateQRCode() {
-            const input = document.getElementById('qrInput').value;
-            // Assuming you have a function in your QR code library to generate the QR code
-            QRCode.toDataURL(input, function (err, url) {
-                if (err) console.error(err)
-                document.getElementById('qrImage').src = url;
-            });
-        }
-    </script>
-</body>
-</html>
- -->
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,7 +14,6 @@
     <main>
         <div class="qr-input-container">
             <input type="text" id="qrInput" placeholder="Enter text or URL">
-            <button id="generateBtn">Generate QR Code</button>
         </div>
         <div id="qrCodeContainer" class="qr-code-container"></div>
     </main>
