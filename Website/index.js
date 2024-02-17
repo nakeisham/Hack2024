@@ -1,5 +1,15 @@
-arr = [];
+function games(num_games) {
+    games = []   
 
+    for (let i = 0; i < num_games; i++) {
+        games.push("https://laytongb.github.io/hackathon-2024-proj/" + i );
+    }
+    return games;
+
+}
+
+
+console.log(games(5));
 
 
 
