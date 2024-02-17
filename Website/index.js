@@ -9,16 +9,22 @@ function games(num_games) {
 }
 
 
-console.log(games(5));
+function generateRandomGameLink() {
+    let num_games = 1; // Number of games
+    let gamesArray = games(num_games);
+    let randomIndex = Math.floor(Math.random() * gamesArray.length);
+    return gamesArray[randomIndex];
+}
 
+document.querySelector("#generateBtn").addEventListener("click", () => {
+    let randomGameLink = generateRandomGameLink();
+    generateQRCode(randomGameLink);
 
-
-document.querySelector("#generateBtn").addEventListener("click",  () => {
-  let qrInput = document.querySelector('#qrInput').value;
-  generateQRCode(qrInput);
-
+    // Set a timer to redirect after 3 mintues
+    setTimeout(function() {
+        window.location.href = "invalid.html";
+    }, 180000);
 });
-
 
 function generateQRCode(text) {
   let qrCodeContainer = document.getElementById('qrCodeContainer');
