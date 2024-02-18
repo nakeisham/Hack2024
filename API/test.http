@@ -1,0 +1,9 @@
+# POST https://mf600.brighton.domains/hack/api.php HTTP/1.1
+# content-type: application/x-www-form-urlencoded
+
+# name=googl&clicked=false
+
+GET https://mf600.brighton.domains/hack/api.php?id=1 HTTP/1.1
+content-type: application/x-www-form-urlencoded
+
+# $api = new ScanAPI('localhost', 'mf600_hackathon', 'ci5Bdo[CqQDI', 'mf600_hackathon_db');
